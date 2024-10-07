@@ -1,0 +1,168 @@
+/*  --------css-demo--------  */
+
+/*  --------Color Scheme--------  */
+Main Color
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+
+
+/*  --------------- Responsive Images -----------------  */
+img{
+  max-width: 100%;
+}
+
+  /*  --------------- Utility Classes ---------------  */
+
+  .container{
+    width: 80vw;
+     
+  }
+
+
+  
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color: blueviolet;
+    font-family: "Oswald", sans-serif;
+    margin:0;
+}
+
+main{
+    background-color: blue;
+
+header.primary{
+    background-color: #3b638b ;
+    color: #ffffff;
+    text-align: center;
+  text-shadow:1px 1px #000000;
+  /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  /*Single value short hand*/
+  padding: 40px;
+   /* T,R,B,L */
+   padding: 20px 40px 20px 40px;
+   /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
+}
+}
+
+header.primary h1{
+  font: size 2.4rem;
+  /* top | left and right | bottom */
+
+  margin: 20px 0 0;
+}
+
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size:1.3rem;
+margin:0;
+}
+
+header.primary nav{
+  max-width:960px;
+margin:auto;
+}
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding:0;
+}
+header.primary nav ul li{
+  list-style-type:none;
+}
+header.primary nav ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  border:1px dotted #3b638b;
+  padding: 7.5px 10px;
+  background-color: rgba{0,0,0, .4};
+  border-radius:20px;
+  transition:.4x;
+}
+
+
+header.primary nav ul li a:hover{
+  background-color: rgba(0,0,0, .8);
+}
+
+
+#content{
+  line-height:1.4;
+}
+
+
+#content h2{
+  color: blueviolet;
+  border: 1px dotted darkgrey;
+}
+
+#blog{
+  display:flex;
+  justify-content:space-around;
+  flex-direction: row;
+  gap:10px;
+}
+
+#blog article.post {
+  box-shadow: 0 4px 8px rgba(0,0,0, .6);
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+  transition: 0.4s;
+}
+
+#blog article.post:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0, .6);
+}
+
+#blog figure{
+  margin:0;
+}
+
+#blog figcaption{
+  text-transform:uppercase;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #c0c0c0;
+}
+
+#blog .post a{
+  color: #3b638b;
+}
+
+
+
+
+
+/* --------- Media Queries ----------- */
+
+@media screen  and (max-width: 560px){
+
+  header.primary nav ul{
+    flex-direction:column;
+    gap:10px;
+    width:200px;
+    margin:10px auto;
+}
+
+
+header.primary nav a{
+  display:block;
+}

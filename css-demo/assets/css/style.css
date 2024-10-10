@@ -40,6 +40,7 @@ main{
 
 header.primary{
     background-color: #3b638b ;
+background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ehoundstooth%3C/title%3E%3Cg fill='%23DB1A51' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 18h6l6-6v6h6l-6 6H0M24 18v6h-6M24 0l-6 6h-6l6-6M12 0v6L0 18v-6l6-6H0V0'/%3E%3C/g%3E%3C/svg%3E");
     color: #ffffff;
     text-align: center;
   text-shadow:1px 1px #000000;
@@ -147,6 +148,45 @@ header.primary nav ul li a:hover{
   color: #3b638b;
 }
 
+aside[role="complementary"]{
+  background-color: #D90F71;
+  color: #ffffff;
+  padding:40px 0;
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  gap:40px;
+}
+
+aside article.widget a{
+  color: #ffffff;
+}
+
+aside article.widget a{last-of-type
+  color: #ffffff;
+  display:block;
+  margin-top:20px;
+  text-align: right;
+}
+
+
+aside article.widget footer{
+  display: none;
+}
+
+#colophon{
+  background-color:#DB2C1A ;
+  padding:1px;
+  color: #ffffff;
+  font-size:1.2rem;
+  font-align:center;
+}
+
+
+
 
 
 
@@ -165,4 +205,8 @@ header.primary nav ul li a:hover{
 
 header.primary nav a{
   display:block;
+}
+
+blog{
+  flex-direction: column;
 }
